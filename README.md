@@ -25,7 +25,7 @@ This repository contains machine learning workflows to predict and analyze sport
 Run the notebooks interactively in Google Colab:
 
 - 🏃‍♂️ **[Day-Level Runner Analysis](https://colab.research.google.com/drive/128bXRgTRFKK6oewpBnaM2JPeQHisbAaY?authuser=1)**
-- 🗕 **[Week-Level Runner Analysis](https://colab.research.google.com/drive/1qRFF-Q0tQWP-o0FT7duoa6M5B4XXQPp1?authuser=1)**
+- 🏃‍♂️ **[Week-Level Runner Analysis](https://colab.research.google.com/drive/1qRFF-Q0tQWP-o0FT7duoa6M5B4XXQPp1?authuser=1)**
 - 🏈 **[NFL Injury Classification](https://colab.research.google.com/drive/1nFEV6f_hZ2SQYMnSxMVamMbG9tKwxsn4?authuser=1)**
 
 ---
@@ -70,10 +70,10 @@ Or to center a GIF:
 
 ### Table of Contents
 
-- [🗕 Day Approach Analysis](#-day-approach-analysis)
+- [🏃‍♂️ Day Approach Analysis](#-day-approach-analysis)
   - [Feature Engineering](#feature-engineering)
   - [Injury Classification](#injury-classification)
-- [🗓 Week Approach Analysis](#-week-approach-analysis)
+- [🏃‍♂️ Week Approach Analysis](#-week-approach-analysis)
   - [Grouped Feature Trends](#grouped-feature-trends)
   - [Recovery & Exertion Analysis](#recovery--exertion-analysis)
 - [🏈 NFL Injury Modeling](#-nfl-injury-modeling)
@@ -87,7 +87,7 @@ Or to center a GIF:
 
 ---
 
-## 🗕 Day Approach Analysis
+## 🏃‍♂️ Day Approach Analysis
 
 ### Feature Engineering
 Details about how features like `total kms`, `Z5 zone`, and recovery metrics were engineered from raw input.
@@ -97,7 +97,7 @@ Binary injury detection based on daily sessions.
 
 ---
 
-## 🗓 Week Approach Analysis
+## 🏃‍♂️ Week Approach Analysis
 
 ### Grouped Feature Trends
 Breakdown of total kilometers, tough sessions, and injury correlations by quartile or intensity bands.
