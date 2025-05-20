@@ -35,7 +35,7 @@ Run the notebooks interactively in Google Colab:
 ```bash
 git clone https://github.com/jdrakes21/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis.git
 cd Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis
-
+---
 Open the notebooks in Jupyter or Colab and start exploring.
 
 ## 📁 Notebooks
