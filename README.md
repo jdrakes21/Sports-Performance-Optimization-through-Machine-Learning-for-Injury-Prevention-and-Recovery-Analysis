@@ -25,7 +25,7 @@ This repository contains machine learning workflows to predict and analyze sport
 Run the notebooks interactively in Google Colab:
 
 - 🏃‍♂️ **[Day-Level Runner Analysis](https://colab.research.google.com/drive/128bXRgTRFKK6oewpBnaM2JPeQHisbAaY?authuser=1)**
-- 📅 **[Week-Level Runner Analysis](https://colab.research.google.com/drive/1qRFF-Q0tQWP-o0FT7duoa6M5B4XXQPp1?authuser=1)**
+- 🗕 **[Week-Level Runner Analysis](https://colab.research.google.com/drive/1qRFF-Q0tQWP-o0FT7duoa6M5B4XXQPp1?authuser=1)**
 - 🏈 **[NFL Injury Classification](https://colab.research.google.com/drive/1nFEV6f_hZ2SQYMnSxMVamMbG9tKwxsn4?authuser=1)**
 
 ---
@@ -35,7 +35,8 @@ Run the notebooks interactively in Google Colab:
 ```bash
 git clone https://github.com/jdrakes21/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis.git
 cd Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis
----
+```
+
 Open the notebooks in Jupyter or Colab and start exploring.
 
 ## 📁 Notebooks
@@ -49,30 +50,44 @@ Open the notebooks in Jupyter or Colab and start exploring.
 ### Interactive Plots
 All notebooks include hover-enabled Plotly graphs and filtering by session or feature group.
 
+### Embedding Demos
 
+To embed graphs:
+
+```markdown
+![Injury Load Quartiles](docs/images/load_quartiles.png)
+```
+
+Or to center a GIF:
+
+```markdown
+<p align="center">
+  <img src="docs/images/load_quartiles.gif" width="600"/>
+</p>
+```
 
 ## 📖 Documentation
 
 ### Table of Contents
 
-- [📅 Day Approach Analysis](#-day-approach-analysis)
-  * [Feature Engineering](#feature-engineering)
-  * [Injury Classification](#injury-classification)
+- [🗕 Day Approach Analysis](#-day-approach-analysis)
+  - [Feature Engineering](#feature-engineering)
+  - [Injury Classification](#injury-classification)
 - [🗓 Week Approach Analysis](#-week-approach-analysis)
-  * [Grouped Feature Trends](#grouped-feature-trends)
-  * [Recovery & Exertion Analysis](#recovery--exertion-analysis)
+  - [Grouped Feature Trends](#grouped-feature-trends)
+  - [Recovery & Exertion Analysis](#recovery--exertion-analysis)
 - [🏈 NFL Injury Modeling](#-nfl-injury-modeling)
-  * [Dataset Merging](#dataset-merging)
-  * [Multiclass Body Part Classification](#multiclass-body-part-classification)
+  - [Dataset Merging](#dataset-merging)
+  - [Multiclass Body Part Classification](#multiclass-body-part-classification)
 - [📊 Visualizations](#-visualizations)
-  * [Interactive Plots](#interactive-plots)
-  * [Embedding Demos](#embedding-demos)
+  - [Interactive Plots](#interactive-plots)
+  - [Embedding Demos](#embedding-demos)
 - [🚀 Running in Colab](#-running-in-colab)
 - [⚠️ Limitations & Improvements](#️-limitations--improvements)
 
 ---
 
-## 📅 Day Approach Analysis
+## 🗕 Day Approach Analysis
 
 ### Feature Engineering
 Details about how features like `total kms`, `Z5 zone`, and recovery metrics were engineered from raw input.
@@ -102,15 +117,6 @@ Prediction of body-part-specific injuries using `RandomForestClassifier`, `XGBoo
 
 ---
 
-## 📊 Visualizations
-
-### Interactive Plots
-All notebooks include hover-enabled Plotly graphs and filtering by session or feature group.
-
-
-
----
-
 ## 🚀 Running in Colab
 
 Each notebook in this project can be launched directly in Google Colab for fast, no-setup experimentation:
@@ -120,11 +126,14 @@ Each notebook in this project can be launched directly in Google Colab for fast,
 - [NFL Injury Analysis - Colab](https://colab.research.google.com/drive/1nFEV6f_hZ2SQYMnSxMVamMbG9tKwxsn4?authuser=1)
 
 To run locally:
+
 ```bash
 git clone https://github.com/jdrakes21/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis.git
 cd Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis
 jupyter notebook
+```
 
+---
 
 ## ⚠️ Limitations & Improvements
 
@@ -136,10 +145,17 @@ jupyter notebook
 
 ### Future Improvements
 
-- 📅 Implement time-series models (LSTM, GRU, Transformers) to capture temporal trends.
+- 🗕 Implement time-series models (LSTM, GRU, Transformers) to capture temporal trends.
 - ⚽ Expand to other sports datasets such as soccer or basketball for generalizability.
 - 🧠 Use explainable AI (e.g., SHAP, LIME) to interpret feature importance in injury predictions.
 - 📈 Build an interactive dashboard (e.g., Streamlit or Dash) for real-time monitoring and decision support.
 - 🔍 Integrate athlete profile features such as age, gender, training history, and injury history.
 
+## 👨‍💻 Authors
 
+- **Jervon Drakes** – *ML Model Developer & Analyst*  
+GitHub: [@jdrakes21](https://github.com/jdrakes21)
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
