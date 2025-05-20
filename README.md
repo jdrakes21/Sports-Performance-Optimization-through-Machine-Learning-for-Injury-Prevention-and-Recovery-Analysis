@@ -38,12 +38,16 @@ cd Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Preventio
 
 Open the notebooks in Jupyter or Colab and start exploring.
 
-📁 Notebooks
-day_approach.ipynb: Analyze daily exertion and injury patterns
+## 📁 Notebooks
 
-week_approach.ipynb: Weekly grouped features and injury rate breakdowns
+- `day_approach.ipynb`: Analyze daily exertion and injury patterns.
+- `week_approach.ipynb`: Weekly grouped features and injury rate breakdowns.
+- `nfl_injury_analysis.ipynb`: Multi-class injury body-part classifier using merged NFL datasets.
 
-nfl_injury_analysis.ipynb: Multi-class injury body-part classifier using merged NFL datasets
+## 📈 Visualizations
+
+### Interactive Plots
+All notebooks include hover-enabled Plotly graphs and filtering by session or feature group.
 
 
 
