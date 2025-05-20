@@ -16,7 +16,7 @@ day_approach.ipynb
 
 -Evaluates features such as daily distance, intensity zones, and recovery for injury risk.
 
-- identify short-term load spikes correlated with injury likelihood.
+-identify short-term load spikes correlated with injury likelihood.
 
 week_approach.ipynb
 
