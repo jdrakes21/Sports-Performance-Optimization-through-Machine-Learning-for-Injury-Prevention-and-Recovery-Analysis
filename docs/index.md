@@ -12,29 +12,29 @@ Additionally, a comparative study on NFL injuries is included to provide broader
 
 day_approach.ipynb
 
-Focuses on daily-level training data for runners.
+-Focuses on daily-level training data for runners.
 
-Evaluates features such as daily distance, intensity zones, and recovery for injury risk.
+-Evaluates features such as daily distance, intensity zones, and recovery for injury risk.
 
-Helps identify short-term load spikes correlated with injury likelihood.
+- identify short-term load spikes correlated with injury likelihood.
 
 week_approach.ipynb
 
-Aggregates training metrics at the weekly level.
+-Aggregates training metrics at the weekly level.
 
-Analyzes injury rates across features like total kilometers, tough sessions, Z5-T1-T2 volume, and exertion.
+-Analyzes injury rates across features like total kilometers, tough sessions, Z5-T1-T2 volume, and exertion.
 
-Produces heatmaps and injury rate breakdowns by grouped feature values.
+-Produces heatmaps and injury rate breakdowns by grouped feature values.
 
 nfl_injury_analysis.ipynb
 
-An in-depth exploratory and predictive analysis of NFL player injuries.
+-An in-depth exploratory and predictive analysis of NFL player injuries.
 
-Combines two datasets to create a unified injury profile.
+-Combines two datasets to create a unified injury profile.
 
-Performs multi-class classification to predict the type and location of injuries.
+-Performs multi-class classification to predict the type and location of injuries.
 
-Offers insights into injury rates by body part, player position, and event context.
+-Offers insights into injury rates by body part, player position, and event context.
 
 📈 Interactive Visualizations
 
