@@ -50,12 +50,23 @@ Open the notebooks in Jupyter or Colab and start exploring.
 ### Interactive Plots
 All notebooks include hover-enabled Plotly graphs and filtering by session or feature group.
 
-### Embedding Demos
+### 📎 Embedding Demos
 
-To embed graphs:
+Interactive graphs have been integrated directly into the notebooks using `mpld3`, allowing you to explore data with hover-enabled tooltips and detailed insights.
+
+To access these:
+- Open any of the notebooks (`day_approach.ipynb`, `week_approach.ipynb`, `nfl_injury_analysis.ipynb`) in Google Colab or Jupyter.
+- Navigate to the visualization sections where the hover-enabled HTML charts are generated.
+- Run the cells — the output will display an interactive graph right within the notebook.
+- In Colab, you can also download the HTML version of the graph or save it directly to the repository's `docs/` folder by running the provided code blocks.
+
+No extra setup is required — just run and interact.
+
+### Embedding Demo Example
+
 
 ```markdown
-![Injury Load Quartiles](docs/images/load_quartiles.png)
+<iframe src="/content/day_approach_nr_sessions.htmll" width="100%" height="600px"></iframe>
 ```
 
 Or to center a GIF:
