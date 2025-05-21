@@ -38,15 +38,27 @@ nfl_injury_analysis.ipynb
 
 📈 Interactive Visualizations
 
-All notebooks include interactive graphs:
+Only the day_approach.ipynb and week_approach.ipynb notebooks include interactive graphs with:
 
-Hover-enabled Plotly charts
+-Hover-enabled Plotly and mpld3 charts
 
-Filterable visualizations by intensity zones, exertion, recovery, etc.
+-Filterable visualizations by intensity zones, exertion, recovery, etc.
 
-Grouped injury insights (e.g., by session difficulty or training volume)
+-Grouped injury insights (e.g., by session difficulty or training volume)
 
 Key insight: Athletes with higher tough-session frequency or abrupt training increases are more prone to injuries.
+
+🔍 Embedding Demo Example
+
+This interactive chart shows the injury rate in relation to the number of sessions per week from the day-level dataset:
+
+Hover over each bar to view the injury rate by training session frequency.
+
+To access this graph manually, go to:
+
+[https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-](https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_approach_nr_sessions.html)
+
+Explore additional visualizations by running the notebooks or accessing other HTML files in the docs/ directory.
 
 ⚙️ Getting Started
 
