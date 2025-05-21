@@ -54,6 +54,10 @@ This interactive chart shows the injury rate in relation to the number of sessio
 
 Hover over each bar to view the injury rate by training session frequency.
 
+To access this graph manually, go to:
+
+[https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-](https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_approach_nr_sessions.html)
+
 Explore additional visualizations by running the notebooks or accessing other HTML files in the docs/ directory.
 
 ⚙️ Getting Started
