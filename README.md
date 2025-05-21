@@ -50,15 +50,18 @@ Open the notebooks in Jupyter or Colab and start exploring.
 ### Interactive Plots
 All notebooks include hover-enabled Plotly graphs and filtering by session or feature group.
 
+
 ### 📎 Embedding Demos
 
-Interactive graphs have been integrated directly into the notebooks using `mpld3`, allowing you to explore data with hover-enabled tooltips and detailed insights.
+Interactive graphs are integrated into the `day_approach.ipynb` and `week_approach.ipynb` notebooks using `mpld3`, enabling hover-based insights on injury rates by training features.
 
-To access these:
-- Open any of the notebooks (`day_approach.ipynb`, `week_approach.ipynb`, `nfl_injury_analysis.ipynb`) in Google Colab or Jupyter.
-- Navigate to the visualization sections where the hover-enabled HTML charts are generated.
-- Run the cells — the output will display an interactive graph right within the notebook.
-- In Colab, you can also download the HTML version of the graph or save it directly to the repository's `docs/` folder by running the provided code blocks.
+To access them:
+- Open the `day_approach.ipynb` or `week_approach.ipynb` notebooks in Google Colab or Jupyter Notebook.
+- Locate the visualization sections near the end — the code will automatically generate and render interactive charts.
+- These include hoverable bars showing injury rate distributions across training loads, recovery, and exertion levels.
+- Charts are also saved as `.html` files in the `docs/` folder and can be opened in a browser directly.
+
+Note: The `nfl_injury_analysis.ipynb` notebook uses static plots for classification metrics but can be enhanced with Plotly or mpld3 if desired.
 
 No extra setup is required — just run and interact.
 
@@ -66,7 +69,7 @@ No extra setup is required — just run and interact.
 
 
 ```markdown
-<iframe src="/content/day_approach_nr_sessions.htmll" width="100%" height="600px"></iframe>
+<iframe src="/content/day_approach_nr_sessions.html" width="100%" height="600px"></iframe>
 ```
 
 Or to center a GIF:
