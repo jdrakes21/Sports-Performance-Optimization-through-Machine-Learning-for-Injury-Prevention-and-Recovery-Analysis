@@ -68,13 +68,10 @@ No extra setup is required — just run and interact.
 
 ### 🔍 Embedding Demo Example
 
-This interactive chart shows the injury rate in relation to the number of sessions per week from the day-level dataset:
 
-<iframe src="/content/day_approach_nr_sessions.html" width="100%" height="600px" frameborder="0"></iframe>
+[Click here to view the interactive injury rate graph by session count](docs/day_approach_nr_sessions.html)
 
-> Hover over each bar to view the injury rate by training session frequency.
-
-Explore additional visualizations by running the notebooks or accessing other HTML files in the `docs/` or `content/` directories.
+This graph uses `mpld3` to display hoverable tooltips inside the HTML.
 
 ```markdown
 <iframe src="/content/day_approach_nr_sessions.html" width="100%" height="600px"></iframe>
