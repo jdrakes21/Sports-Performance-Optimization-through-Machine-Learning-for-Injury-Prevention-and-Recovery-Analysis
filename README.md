@@ -51,7 +51,7 @@ Open the notebooks in Jupyter or Colab and start exploring.
 All notebooks include hover-enabled Plotly graphs and filtering by session or feature group.
 
 
-### 📎 Embedding Demos
+### Embedding Demos
 
 Interactive graphs are integrated into the `day_approach.ipynb` and `week_approach.ipynb` notebooks using `mpld3`, enabling hover-based insights on injury rates by training features.
 
