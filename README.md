@@ -153,7 +153,7 @@ jupyter notebook
 
 ### Future Improvements
 
-- 🗕 Implement time-series models (LSTM, GRU, Transformers) to capture temporal trends.
+- 📅 Implement time-series models (LSTM, GRU, Transformers) to capture temporal trends.
 - ⚽ Expand to other sports datasets such as soccer or basketball for generalizability.
 - 🧠 Use explainable AI (e.g., SHAP, LIME) to interpret feature importance in injury predictions.
 - 📈 Build an interactive dashboard (e.g., Streamlit or Dash) for real-time monitoring and decision support.
