@@ -51,7 +51,7 @@ Open the notebooks in Jupyter or Colab and start exploring.
 All notebooks include hover-enabled Plotly graphs and filtering by session or feature group.
 
 
-### 📎 Embedding Demos
+### Embedding Demos
 
 Interactive graphs are integrated into the `day_approach.ipynb` and `week_approach.ipynb` notebooks using `mpld3`, enabling hover-based insights on injury rates by training features.
 
@@ -153,10 +153,8 @@ jupyter notebook
 
 ### Future Improvements
 
-- 🗕 Implement time-series models (LSTM, GRU, Transformers) to capture temporal trends.
 - ⚽ Expand to other sports datasets such as soccer or basketball for generalizability.
-- 🧠 Use explainable AI (e.g., SHAP, LIME) to interpret feature importance in injury predictions.
-- 📈 Build an interactive dashboard (e.g., Streamlit or Dash) for real-time monitoring and decision support.
+- 📈 Build an interactive dashboard for real-time monitoring and decision support.
 - 🔍 Integrate athlete profile features such as age, gender, training history, and injury history.
 
 ## 👨‍💻 Authors
