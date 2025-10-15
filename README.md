@@ -75,9 +75,10 @@ These plots display tooltips on hover, making it easier to interpret performance
 
 ### 🔍 Embedding Demo Example
 
-This interactive confusion matrix below shows model performance for logistic regression, where you can hover over each cell to explore true vs. predicted injuries:
+This interactive confusion matrix below shows model performance for logistic regression in the day_approach dataset, where you can hover over each cell to explore true vs. predicted injuries:
 
-<iframe src="logreg_conf_matrix.html" width="100%" height="600px" frameborder="0"></iframe>
+[View interactive confusion matrix](https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/logreg_conf_matrix.html)
+
 
 *To explore more hover-enabled plots (e.g., PR/ROC curves or training-based injury insights), open the notebooks or check other `.html` files in the `docs/` folder.*
 
