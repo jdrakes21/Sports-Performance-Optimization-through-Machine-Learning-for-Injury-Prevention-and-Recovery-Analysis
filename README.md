@@ -51,27 +51,39 @@ Open the notebooks in Jupyter or Colab and start exploring.
 All notebooks include hover-enabled Plotly graphs and filtering by session or feature group.
 
 
-### Embedding Demos
+### ⚙️ Embedding Demos
 
-Interactive graphs are integrated into the `day_approach.ipynb` and `week_approach.ipynb` notebooks using `mpld3`, enabling hover-based insights on injury rates by training features.
+Interactive visualizations are included in the `day_approach.ipynb` and `week_approach.ipynb` notebooks using the `mpld3` library. Currently, **hover functionality is implemented for model evaluation plots**, including:
 
-To access them:
-- Open the `day_approach.ipynb` or `week_approach.ipynb` notebooks in Google Colab or Jupyter Notebook.
-- Locate the visualization sections near the end — the code will automatically generate and render interactive charts.
-- These include hoverable bars showing injury rate distributions across training loads, recovery, and exertion levels.
-- Charts are also saved as `.html` files in the `docs/` folder and can be opened in a browser directly.
+- **Confusion Matrices**
+- **Precision-Recall (PR) Curves**
+- **ROC Curves**
 
-Note: The `nfl_injury_analysis.ipynb` notebook uses static plots for classification metrics but can be enhanced with Plotly or mpld3 if desired.
+These plots display tooltips on hover, making it easier to interpret performance metrics like true/false positives and classification thresholds.
 
-No extra setup is required — just run and interact.
+#### How to Access:
 
+- Open the notebooks (`day_approach.ipynb`, `week_approach.ipynb`) in **Google Colab**.
+- Run the model evaluation cells at the end — hoverable visualizations will render automatically.
+- Interactive plots are also saved as `.html` files in the `docs/` folder and viewable via browser.
+
+> **Note:** Injury rate visualizations by feature remain static for now but may be upgraded in a future update.
+> Note: The `nfl_injury_analysis.ipynb` notebook uses static plots for classification metrics but can be enhanced with Plotly or mpld3 if desired.
+
+---
 
 ### 🔍 Embedding Demo Example
 
+**Interactive Confusion Matrix — Logistic Regression**
 
-[Click here to view the interactive injury rate graph by session count](docs/day_approach_nr_sessions.html)
+```html
+<iframe src="logreg_conf_matrix.html" width="100%" height="500px" frameborder="0"></iframe>
+```
 
-This graph uses `mpld3` to display hoverable tooltips inside the HTML.
+👉 [Click here to open the visualization in a new tab](logreg_conf_matrix.html)
+
+This chart displays hover-enabled tooltips for each confusion matrix cell (TP, FP, TN, FN), offering better interpretability.
+
 
 
 ## 📖 Documentation
