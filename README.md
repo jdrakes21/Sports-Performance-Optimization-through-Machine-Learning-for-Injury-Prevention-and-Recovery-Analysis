@@ -68,7 +68,8 @@ These plots display tooltips on hover, making it easier to interpret performance
 - Interactive plots are also saved as `.html` files in the `docs/` folder and viewable via browser.
 
 > **Note:** Injury rate visualizations by feature remain static for now but may be upgraded in a future update.
-> Note: The `nfl_injury_analysis.ipynb` notebook uses static plots for classification metrics but can be enhanced with Plotly or mpld3 if desired.
+
+ **Note:** The `nfl_injury_analysis.ipynb` notebook uses static plots for classification metrics but can be enhanced with Plotly or mpld3 if desired.
 
 ---
 
