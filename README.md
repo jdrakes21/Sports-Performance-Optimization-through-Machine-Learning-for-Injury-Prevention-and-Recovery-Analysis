@@ -67,7 +67,7 @@ These plots display tooltips on hover, making it easier to interpret performance
 - Run the model evaluation cells at the end — hoverable visualizations will render automatically.
 - Interactive plots are also saved as `.html` files in the `docs/` folder and viewable via browser.
 
-> **Note:** Injury rate visualizations by feature remain static for now but may be upgraded in a future update.
+ **Note:** Injury rate visualizations by feature remain static for now but may be upgraded in a future update.
 
  **Note:** The `nfl_injury_analysis.ipynb` notebook uses static plots for classification metrics but can be enhanced with Plotly or mpld3 if desired.
 
@@ -75,15 +75,12 @@ These plots display tooltips on hover, making it easier to interpret performance
 
 ### 🔍 Embedding Demo Example
 
-**Interactive Confusion Matrix — Logistic Regression**
+This interactive confusion matrix below shows model performance for logistic regression, where you can hover over each cell to explore true vs. predicted injuries:
 
-```html
-<iframe src="logreg_conf_matrix.html" width="100%" height="500px" frameborder="0"></iframe>
-```
+<iframe src="logreg_conf_matrix.html" width="100%" height="600px" frameborder="0"></iframe>
 
-👉 [Click here to open the visualization in a new tab](logreg_conf_matrix.html)
+*To explore more hover-enabled plots (e.g., PR/ROC curves or training-based injury insights), open the notebooks or check other `.html` files in the `docs/` folder.*
 
-This chart displays hover-enabled tooltips for each confusion matrix cell (TP, FP, TN, FN), offering better interpretability.
 
 
 
@@ -172,7 +169,7 @@ jupyter notebook
 
 ## 👨‍💻 Authors
 
-- **Jervon Drakes** – *ML Model Developer & Analyst*  
+- **Jervon Drakes** 
 GitHub: [@jdrakes21](https://github.com/jdrakes21)
 
 ## 📜 License
