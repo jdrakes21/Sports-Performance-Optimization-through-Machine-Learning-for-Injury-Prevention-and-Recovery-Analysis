@@ -65,7 +65,6 @@ These plots display tooltips on hover, making it easier to interpret performance
 
 - Open the notebooks (`day_approach.ipynb`, `week_approach.ipynb`) in **Google Colab**.
 - Run the model evaluation cells at the end — hoverable visualizations will render automatically.
-- Interactive plots are also saved as `.html` files in the `docs/` folder and viewable via browser.
 
  **Note:** Injury rate visualizations by feature remain static for now but may be upgraded in a future update.
 
@@ -80,7 +79,7 @@ This interactive confusion matrix below shows model performance for logistic reg
 [View interactive confusion matrix](https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/logreg_conf_matrix.html)
 
 
-*To explore more hover-enabled plots (e.g., PR/ROC curves or training-based injury insights), open the notebooks or check other `.html` files in the `docs/` folder.*
+*To explore more hover-enabled plots (e.g., PR/ROC curves or training-based injury insights), open the notebooks.*
 
 
 
