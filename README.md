@@ -193,11 +193,6 @@ One example of the interactive dashboards included in this project is the **Day 
 - Compare **ROC-AUC** values interactively.
 - Zoom and pan to inspect specific regions of the ROC space.
 
-### Launch Dashboard
-
-➡️ **Day Approach ROC Dashboard**
-
-https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_roc_all_models.html
 
 ---
 
@@ -289,3 +284,110 @@ The interactive dashboards developed for this project allow users to:
 - Share interactive visualizations through GitHub Pages without requiring Python or Jupyter Notebook.
 
 Together, these dashboards provide a richer understanding of model performance and transform the repository from a collection of machine learning notebooks into an interactive and reproducible data science project.
+
+# 📊 Results & Model Comparison
+
+Four machine learning algorithms were evaluated across the runner injury prediction tasks:
+
+- K-Nearest Neighbors (KNN)
+- Logistic Regression
+- Random Forest
+- XGBoost
+
+Model performance was assessed using multiple evaluation metrics, including:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC Curves
+- Precision–Recall Curves
+- Confusion Matrices
+
+Rather than relying on a single metric, models were compared based on their overall ability to correctly identify injured athletes while minimizing false positives and false negatives.
+
+---
+
+# 🏃 Day-Level Injury Prediction
+
+The day-level analysis examined whether injuries could be predicted using information collected from individual training sessions, including training volume, exertion, recovery, and intensity-based running metrics.
+
+### Model Performance Summary
+
+| Model | Accuracy | Overall Assessment |
+|--------|----------|-------------------|
+| Random Forest | **98%** | Best overall performer |
+| KNN | **92%** | Strong baseline with high classification accuracy |
+| XGBoost | **87%** | Good predictive performance with nonlinear learning capability |
+| Logistic Regression | **61%** | Interpretable baseline but limited by linear decision boundaries |
+
+### Discussion
+
+Random Forest achieved the highest overall performance, demonstrating an excellent balance between precision and recall while accurately distinguishing injured from non-injured athletes. Its ensemble structure enabled the model to capture nonlinear relationships between workload, recovery, and exertion that simpler models were unable to identify.
+
+KNN also performed well after feature scaling but remained sensitive to local neighborhood structure. XGBoost achieved competitive results, although it slightly underperformed Random Forest on this dataset. Logistic Regression provided a useful interpretable baseline but struggled to model the complex interactions present in day-level training data.
+
+---
+
+# 🏃 Week-Level Injury Prediction
+
+The weekly analysis investigated whether aggregating workload over longer periods improved injury prediction performance.
+
+### Model Performance Summary
+
+| Model | Accuracy | Overall Assessment |
+|--------|----------|-------------------|
+| Random Forest | **99%** | Best overall performer |
+| XGBoost | **97%** | Excellent performance |
+| KNN | **96%** | Strong predictive capability |
+| Logistic Regression | **79%** | Significant improvement over the day-level model but still below ensemble methods |
+
+### Discussion
+
+Aggregating workload across weekly intervals substantially improved predictive performance for every machine learning model. Weekly features better represented cumulative fatigue, recovery trends, and sustained training intensity, enabling the classifiers to identify injury patterns that were less apparent at the daily level.
+
+Random Forest again achieved the highest overall performance, while XGBoost and KNN also demonstrated excellent predictive capability. Logistic Regression improved considerably compared with the day-level analysis but continued to underperform relative to nonlinear ensemble methods.
+
+---
+
+# 🏈 NFL Injury Classification
+
+Unlike the runner analyses, the NFL dataset required multiclass classification to identify the location of an athlete's injury rather than simply predicting whether an injury occurred.
+
+### Model Performance Summary
+
+| Model | Accuracy | Overall Assessment |
+|--------|----------|-------------------|
+| Random Forest | **66%** | Best multiclass classifier |
+
+### Discussion
+
+The NFL injury classification problem proved substantially more challenging than the runner injury prediction tasks due to the larger number of target classes and pronounced class imbalance.
+
+The Random Forest classifier achieved approximately **66% overall accuracy**, performing particularly well for common injury locations such as ankle and knee injuries while exhibiting lower performance for rare injury classes. These results demonstrate the increased complexity of multiclass injury prediction in professional sports.
+
+---
+
+# 🏆 Overall Model Comparison
+
+| Model | Strengths | Limitations |
+|--------|-----------|-------------|
+| **Random Forest** | Highest predictive performance, robust to nonlinear relationships, excellent balance of precision and recall | Reduced interpretability compared with linear models |
+| **XGBoost** | Strong ensemble learner capable of modeling complex interactions | More computationally intensive and requires additional tuning |
+| **KNN** | Simple, intuitive algorithm with competitive performance after feature scaling | Sensitive to feature scaling and neighborhood selection |
+| **Logistic Regression** | Fast, interpretable baseline model | Limited ability to capture nonlinear relationships within the data |
+
+---
+
+# 🥇 Best Performing Model
+
+Across both runner injury prediction datasets, **Random Forest consistently achieved the strongest overall performance**, outperforming the remaining classifiers in terms of accuracy and overall classification quality.
+
+The superior performance of Random Forest is likely attributable to its ability to:
+
+- Capture nonlinear relationships between training variables.
+- Model complex interactions among workload, recovery, and exertion.
+- Reduce overfitting through ensemble averaging.
+- Maintain strong predictive performance despite correlated physiological features.
+
+These characteristics make Random Forest particularly well suited for injury prediction problems, where injuries are typically influenced by combinations of training variables rather than isolated metrics.
