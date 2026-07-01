@@ -179,4 +179,90 @@ These visualizations provide a more intuitive understanding of model behavior, m
 
 ---
 
+# 📈 Interactive Visualizations
 
+To enhance model evaluation and interpretability, this project incorporates **interactive Plotly dashboards** for the runner injury prediction models. These dashboards allow users to move beyond static evaluation metrics by exploring classifier performance through hover-enabled visualizations and interactive model filtering.
+
+Interactive dashboards are currently implemented in:
+
+- 🏃 `day_approach.ipynb`
+- 🏃 `week_approach.ipynb`
+
+The dashboards include:
+
+- 📊 Interactive Confusion Matrices
+- 📈 Receiver Operating Characteristic (ROC) Curves
+- 📉 Precision–Recall (PR) Curves
+- 🔄 Dropdown filtering to compare individual machine learning models
+- 🖱️ Hover tooltips displaying detailed evaluation metrics
+
+> **Note:** The `nfl_injury_analysis.ipynb` notebook currently uses static evaluation plots but may be extended with similar interactive dashboards in future work.
+
+---
+
+# 🔍 Featured Interactive Dashboard
+
+One example of the interactive dashboards included in this project is the **ROC Curve Dashboard**, which compares the performance of all four machine learning models used for day-level injury prediction.
+
+### Dashboard Features
+
+- Compare **KNN**, **Logistic Regression**, **Random Forest**, and **XGBoost** on a single ROC plot.
+- Hover over any point to inspect the corresponding **False Positive Rate (FPR)** and **True Positive Rate (TPR)**.
+- Filter individual models using the built-in dropdown menu.
+- Compare **ROC-AUC** values interactively.
+- Zoom and pan to inspect specific regions of the curve.
+
+### Explore the Interactive Dashboard
+
+➡️ **Day Approach ROC Dashboard**
+
+https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_roc_all_models.html
+
+---
+
+# 🚀 Additional Interactive Dashboards
+
+The following interactive dashboards are also available:
+
+| Dashboard | Description |
+|-----------|-------------|
+| Logistic Regression Confusion Matrix | Hover-enabled confusion matrix displaying prediction outcomes. |
+| Day Approach Precision–Recall Dashboard | Interactive comparison of precision and recall across all models. |
+| Week Approach ROC Dashboard | ROC comparison for the weekly injury prediction models. |
+| Week Approach Precision–Recall Dashboard | Precision–Recall comparison for the weekly injury prediction models. |
+
+### Access the Dashboards
+
+- **Logistic Regression Confusion Matrix**  
+  https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/logreg_conf_matrix.html
+
+- **Day Approach Precision–Recall Dashboard**  
+  https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_pr_all_models.html
+
+- **Week Approach ROC Dashboard**  
+  https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/week_roc_all_models.html
+
+- **Week Approach Precision–Recall Dashboard**  
+  https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/week_pr_all_models.html
+
+---
+
+# 🔄 Reproducing the Dashboards
+
+Interactive dashboards are generated automatically by running the final model evaluation cells within the `day_approach.ipynb` and `week_approach.ipynb` notebooks.
+
+The dashboards are exported as standalone HTML files using Plotly, allowing them to be viewed directly in any modern web browser or hosted through GitHub Pages.
+
+---
+
+# 💡 Why Interactive Dashboards?
+
+Traditional evaluation metrics such as accuracy and F1-score provide only summary statistics. The interactive dashboards developed for this project enable a more comprehensive evaluation by allowing users to:
+
+- Compare multiple classifiers simultaneously.
+- Explore ROC and Precision–Recall trade-offs interactively.
+- Inspect confusion matrix predictions in detail.
+- Analyze model behavior across different evaluation metrics.
+- Share interactive visualizations without rerunning the notebooks.
+
+These dashboards enhance the interpretability of the machine learning workflow and provide an engaging way to explore model performance.
