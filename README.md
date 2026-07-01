@@ -162,26 +162,7 @@ Unlike the runner datasets, which perform **binary injury prediction**, the NFL 
 
 # 📈 Interactive Visualizations
 
-A key component of this project is the use of interactive dashboards to evaluate machine learning model performance. Rather than relying solely on static figures, the project incorporates **Plotly-based visualizations** that allow users to explore classifier performance through hover-enabled tooltips and model filtering.
-
-The interactive dashboards support:
-
-- 📊 Hover-enabled Confusion Matrices
-- 📈 Interactive ROC Curves
-- 📉 Interactive Precision–Recall Curves
-- 🔄 Model selection through dropdown filters
-- 💾 Exportable HTML dashboards compatible with GitHub Pages
-
-These visualizations provide a more intuitive understanding of model behavior, making it easier to compare classifiers, inspect prediction errors, and evaluate performance across multiple metrics.
-
-> **Interactive dashboards are currently implemented in the `day_approach.ipynb` and `week_approach.ipynb` notebooks.**  
-> The `nfl_injury_analysis.ipynb` notebook currently uses static evaluation plots.
-
----
-
-# 📈 Interactive Visualizations
-
-To enhance model evaluation and interpretability, this project incorporates **interactive Plotly dashboards** for the runner injury prediction models. These dashboards allow users to move beyond static evaluation metrics by exploring classifier performance through hover-enabled visualizations and interactive model filtering.
+To enhance model evaluation and interpretability, this project incorporates **interactive Plotly dashboards** for the runner injury prediction models. These dashboards extend beyond traditional static evaluation plots by allowing users to explore classifier performance through hover-enabled visualizations and interactive model filtering.
 
 Interactive dashboards are currently implemented in:
 
@@ -193,16 +174,16 @@ The dashboards include:
 - 📊 Interactive Confusion Matrices
 - 📈 Receiver Operating Characteristic (ROC) Curves
 - 📉 Precision–Recall (PR) Curves
-- 🔄 Dropdown filtering to compare individual machine learning models
+- 🔄 Dropdown filtering to compare machine learning models
 - 🖱️ Hover tooltips displaying detailed evaluation metrics
 
-> **Note:** The `nfl_injury_analysis.ipynb` notebook currently uses static evaluation plots but may be extended with similar interactive dashboards in future work.
+> **Note:** The `nfl_injury_analysis.ipynb` notebook currently uses static evaluation plots. Future work will extend the same interactive dashboard functionality to the NFL injury classification models.
 
 ---
 
 # 🔍 Featured Interactive Dashboard
 
-One example of the interactive dashboards included in this project is the **ROC Curve Dashboard**, which compares the performance of all four machine learning models used for day-level injury prediction.
+One example of the interactive dashboards included in this project is the **Day Approach ROC Curve Dashboard**, which compares the performance of all four machine learning models used for daily injury prediction.
 
 ### Dashboard Features
 
@@ -210,9 +191,9 @@ One example of the interactive dashboards included in this project is the **ROC 
 - Hover over any point to inspect the corresponding **False Positive Rate (FPR)** and **True Positive Rate (TPR)**.
 - Filter individual models using the built-in dropdown menu.
 - Compare **ROC-AUC** values interactively.
-- Zoom and pan to inspect specific regions of the curve.
+- Zoom and pan to inspect specific regions of the ROC space.
 
-### Explore the Interactive Dashboard
+### Launch Dashboard
 
 ➡️ **Day Approach ROC Dashboard**
 
@@ -220,49 +201,91 @@ https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Lear
 
 ---
 
-# 🚀 Additional Interactive Dashboards
+# 📊 Interactive Dashboard Library
 
-The following interactive dashboards are also available:
+## 🏃 Day Approach Dashboards
 
-| Dashboard | Description |
-|-----------|-------------|
-| Logistic Regression Confusion Matrix | Hover-enabled confusion matrix displaying prediction outcomes. |
-| Day Approach Precision–Recall Dashboard | Interactive comparison of precision and recall across all models. |
-| Week Approach ROC Dashboard | ROC comparison for the weekly injury prediction models. |
-| Week Approach Precision–Recall Dashboard | Precision–Recall comparison for the weekly injury prediction models. |
+### Confusion Matrices
 
-### Access the Dashboards
+- **KNN**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_knn_conf_matrix.html
 
-- **Logistic Regression Confusion Matrix**  
-  https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/logreg_conf_matrix.html
+- **Logistic Regression**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_logreg_conf_matrix.html
 
-- **Day Approach Precision–Recall Dashboard**  
-  https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_pr_all_models.html
+- **Random Forest**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_rf_conf_matrix.html
 
-- **Week Approach ROC Dashboard**  
-  https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/week_roc_all_models.html
+- **XGBoost**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_xgboost_conf_matrix.html
 
-- **Week Approach Precision–Recall Dashboard**  
-  https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/week_pr_all_models.html
+### Model Comparison Dashboards
+
+- **ROC Dashboard**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_roc_all_models.html
+
+- **Precision–Recall Dashboard**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_pr_all_models.html
 
 ---
 
-# 🔄 Reproducing the Dashboards
+## 🏃 Week Approach Dashboards
+
+### Confusion Matrices
+
+- **KNN**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/week_knn_conf_matrix.html
+
+- **Logistic Regression**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/week_logreg_conf_matrix.html
+
+- **Random Forest**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/week_rf_conf_matrix.html
+
+- **XGBoost**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/week_xgboost_conf_matrix.html
+
+### Model Comparison Dashboards
+
+- **ROC Dashboard**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/week_roc_all_models.html
+
+- **Precision–Recall Dashboard**
+  - https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/week_pr_all_models.html
+
+---
+
+# 🚀 Reproducing the Dashboards
 
 Interactive dashboards are generated automatically by running the final model evaluation cells within the `day_approach.ipynb` and `week_approach.ipynb` notebooks.
 
-The dashboards are exported as standalone HTML files using Plotly, allowing them to be viewed directly in any modern web browser or hosted through GitHub Pages.
+The dashboards are created using **Plotly** and exported as standalone HTML files, making them viewable in any modern web browser or through GitHub Pages.
+
+Example:
+
+```python
+plot_roc_dashboard(
+    y_true=y_test,
+    prob_dict=probs_day,
+    title="Day Approach ROC Curves",
+    save_path="docs/day_roc_all_models.html"
+)
+```
+
+Running the evaluation cells automatically generates all ROC, Precision–Recall, and Confusion Matrix dashboards for the corresponding notebook.
 
 ---
 
 # 💡 Why Interactive Dashboards?
 
-Traditional evaluation metrics such as accuracy and F1-score provide only summary statistics. The interactive dashboards developed for this project enable a more comprehensive evaluation by allowing users to:
+Traditional evaluation metrics such as accuracy, precision, recall, and F1-score summarize model performance but do not fully illustrate classifier behavior.
 
-- Compare multiple classifiers simultaneously.
-- Explore ROC and Precision–Recall trade-offs interactively.
-- Inspect confusion matrix predictions in detail.
-- Analyze model behavior across different evaluation metrics.
-- Share interactive visualizations without rerunning the notebooks.
+The interactive dashboards developed for this project allow users to:
 
-These dashboards enhance the interpretability of the machine learning workflow and provide an engaging way to explore model performance.
+- Compare multiple machine learning models simultaneously.
+- Explore ROC and Precision–Recall trade-offs across different decision thresholds.
+- Inspect confusion matrix predictions in detail using hover-enabled tooltips.
+- Filter individual models to simplify visual comparisons.
+- Share interactive visualizations through GitHub Pages without requiring Python or Jupyter Notebook.
+
+Together, these dashboards provide a richer understanding of model performance and transform the repository from a collection of machine learning notebooks into an interactive and reproducible data science project.
