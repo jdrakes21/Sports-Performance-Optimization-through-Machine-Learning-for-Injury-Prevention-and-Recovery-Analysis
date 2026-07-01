@@ -159,3 +159,134 @@ Features include:
 Unlike the runner datasets, which perform **binary injury prediction**, the NFL dataset performs **multiclass injury classification**, predicting the location of an athlete's injury.
 
 ---
+
+# 📈 Interactive Visualizations
+
+A key component of this project is the use of interactive dashboards to evaluate machine learning model performance. Rather than relying solely on static figures, the project incorporates **Plotly-based visualizations** that allow users to explore classifier performance through hover-enabled tooltips and model filtering.
+
+The interactive dashboards support:
+
+- 📊 Hover-enabled Confusion Matrices
+- 📈 Interactive ROC Curves
+- 📉 Interactive Precision–Recall Curves
+- 🔄 Model selection through dropdown filters
+- 💾 Exportable HTML dashboards compatible with GitHub Pages
+
+These visualizations provide a more intuitive understanding of model behavior, making it easier to compare classifiers, inspect prediction errors, and evaluate performance across multiple metrics.
+
+> **Interactive dashboards are currently implemented in the `day_approach.ipynb` and `week_approach.ipynb` notebooks.**  
+> The `nfl_injury_analysis.ipynb` notebook currently uses static evaluation plots.
+
+---
+
+# 🖥️ Dashboard Gallery
+
+## 📊 Confusion Matrix Dashboard
+
+The confusion matrix dashboard provides an interactive breakdown of classification performance by displaying:
+
+- True Positives
+- True Negatives
+- False Positives
+- False Negatives
+
+Hovering over each cell displays the predicted class, actual class, and number of observations.
+
+<p align="center">
+<img src="docs/images/logreg_conf_matrix.png" width="700">
+</p>
+
+<p align="center">
+<a href="https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/logreg_conf_matrix.html">
+🔗 View Interactive Confusion Matrix
+</a>
+</p>
+
+---
+
+## 📈 ROC Curve Dashboard
+
+Receiver Operating Characteristic (ROC) curves compare the ability of each classifier to distinguish injured from non-injured athletes across different classification thresholds.
+
+The dashboard includes:
+
+- Hover-enabled ROC values
+- ROC-AUC scores
+- Random baseline reference
+- Model filtering through dropdown menus
+
+<p align="center">
+<img src="docs/images/day_roc_dashboard.png" width="850">
+</p>
+
+<p align="center">
+<a href="https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_roc_all_models.html">
+🔗 View Interactive ROC Dashboard
+</a>
+</p>
+
+---
+
+## 📉 Precision–Recall Dashboard
+
+Because sports injury datasets are inherently imbalanced, Precision–Recall curves provide a more informative evaluation than accuracy alone.
+
+This dashboard allows users to:
+
+- Compare precision and recall across classifiers
+- Inspect PR-AUC scores
+- Filter individual models
+- Hover over each point for detailed metric values
+
+<p align="center">
+<img src="docs/images/day_pr_dashboard.png" width="850">
+</p>
+
+<p align="center">
+<a href="https://jdrakes21.github.io/Sports-Performance-Optimization-through-Machine-Learning-for-Injury-Prevention-and-Recovery-Analysis/day_pr_all_models.html">
+🔗 View Interactive Precision–Recall Dashboard
+</a>
+</p>
+
+---
+
+# 🚀 Reproducing the Dashboards
+
+The interactive dashboards are generated automatically by running the final model evaluation cells within the notebooks.
+
+Supported notebooks:
+
+- `day_approach.ipynb`
+- `week_approach.ipynb`
+
+The dashboards are exported as standalone HTML files, allowing them to be viewed directly in any modern web browser.
+
+Example:
+
+```python
+plot_roc_dashboard(
+    y_true=y_test,
+    prob_dict=probs_day,
+    title="Day Approach ROC Curves",
+    save_path="docs/day_roc_all_models.html"
+)
+```
+
+The generated HTML files are placed inside the `docs/` directory and are automatically hosted through GitHub Pages after pushing changes to the repository.
+
+---
+
+# 💡 Why Interactive Dashboards?
+
+Traditional static figures provide only a snapshot of model performance. Interactive dashboards allow users to explore the models in greater detail by examining prediction outcomes, comparing classifiers, and evaluating performance across different metrics.
+
+Compared with static visualizations, the dashboards provide:
+
+| Feature | Benefit |
+|---------|---------|
+| Hover Tooltips | Inspect prediction counts and evaluation metrics directly |
+| Model Filtering | Compare individual classifiers without clutter |
+| Interactive Exploration | Better understand classifier strengths and weaknesses |
+| GitHub Pages Integration | Dashboards can be shared and viewed without running the notebooks |
+
+These dashboards transform the repository from a collection of notebooks into an interactive machine learning project that is easier to interpret, reproduce, and demonstrate.
